@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: green;">
+        GeeksforGeeks
+    </h1>
+ 
+    <p>
+        The page will notify if the user has
+        started filling the form and tries
+        to navigate away from it.
+    </p>
+ 
+    <div class="container">
+        <h2>A Demo Contact Form</h2>
+        <form action="#">
+            <label>First Name</label>
+ 
+            <!-- Create all the input boxes and
+            assign their respective functions
+            to update the content in a variable -->
+            <input type="text"
+                   id="fname"
+                   name="firstname"
+                   onchange="updateFname()">
+ 
+            <label>Last Name</label>
+            <input type="text"
+                   id="lname"
+                   name="lastname"
+                   onchange="updateLname()">
+ 
+            <label>Subject</label>
+            <textarea id="subject"
+                      name="subject"
+                      style="height:100px"
+                      onchange="updateSubject()">
+            </textarea>
+ 
+            <button class="submit-btn"
+                    onclick="return false;">
+                Submit
+            </button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
